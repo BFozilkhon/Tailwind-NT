@@ -1,0 +1,62 @@
+fontFamily
+default: font-sans
+within tailwind: font-sans, font-serif, font-mono
+custom: Google Fonts import + fontFamily: { 'poppins': ['Poppins'] }
+
+@layer base {
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Roboto.woff2) format('woff2');
+  }
+}
+
+fontSize:
+within tailwind: text-xs, text-sm, text-base, text-lg, text-xl, text-2xl, text-3xl up to 9xl	
+custom: 'myFont': ['100px', {
+        lineHeight: '70px',
+        letterSpacing: '-0.02em',
+        fontWeight: '700',
+}],
+
+backgroundColor:
+structure: bg-{color}-{alpha}
+custom: colors: {
+        'primary': '#243c5a',
+        'secondary': {
+            '1': 'red',
+            '2': 'lightRed'
+        }
+},
+
+backgroundImage:
+default: bg-gradient-to-t, bg-gradient-to-tr, bg-gradient-to-r
+custom:       backgroundImage: {
+        'hero-pattern': "url('/img/hero-pattern.svg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+}
+Arbitary Value: bg-[url('/img/hero-pattern.svg')]
+
+
+borderWidth & borderColor & borderStyle: 
+default: border meaning 1px
+har biriga alohida style berib chiqish kerak
+border-1 yo'q
+
+BorderRadius
+default: rounded-none	
+within tailwind: rounded-sm (2px), rounded (4px), rounded-md (6px)	
+
+Transition:
+Transition Duration - duration-1000
+Transition Property - transition-all
+Transition Timing Function - ease-linear, ease-in, ease-out, ease-in-out
+
+Transform:
+scale() -> scale-50	meaning scale(0.5) up to 150
+rotate() -> rotate-1 (1deg), rotate-12 (12deg)
+
+hover: , focus:, active:
+

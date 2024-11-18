@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div
+      class="w-[100%] h-[70vh] bg-[url('../images.jpg')] bg-no-repeat bg-cover"
+    >
+      Fozil
+    </div>
+
+    <h1 class="font-fozil">FozilKHon</h1>
+
+    <div class="swiper w-[100%] h-[300px]">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg-red-900 text-white">Slide 1</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 2</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 3</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 3</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 3</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 3</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 3</div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="mySwiper mt-5 w-[100%] h-[300px]">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg-red-900 text-white">Slide 1</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 2</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 3</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 3</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 3</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 3</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 3</div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="mySwiper3 mt-5 w-[100%] h-[300px]">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg-red-900 text-white">Slide 1</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 2</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 3</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 3</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 3</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 3</div>
+        <div class="swiper-slide bg-red-900 text-white">Slide 3</div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div
+      class="w-[400px] h-[400px] bg-red-400 mt-6 border-[3.5px] border-green-800 border-dashed md:hover:bg-pink-500 sm:w-[100px] max-900:hover:bg-red-400"
+    ></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+      const swiper = new Swiper('.swiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      const swiper2 = new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      const swiper3 = new Swiper('.mySwiper3', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'DinPro';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/dinpro_medium.otf) format('otf');
+  }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.mySwiper,
+.mySwiper3 {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
